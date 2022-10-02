@@ -4,6 +4,8 @@ class RedditPost {
     required this.title,
     required this.selftext,
     required this.thumbnail,
+    required this.author,
+    required this.linkFlairText,
     required this.ups,
   });
 
@@ -11,6 +13,8 @@ class RedditPost {
   final String title;
   final String selftext;
   final String? thumbnail;
+  final String author;
+  final String linkFlairText;
   final int ups;
 
   factory RedditPost.fromAnother(RedditPost post) {
@@ -18,7 +22,9 @@ class RedditPost {
       id: post.id, 
       title: post.title, 
       selftext: post.selftext, 
-      thumbnail: post.thumbnail, 
+      thumbnail: post.thumbnail,
+      author: post.author,
+      linkFlairText: post.linkFlairText,
       ups: post.ups
     );
   }
@@ -27,23 +33,28 @@ class RedditPost {
     final id = json["id"] as String;
     final title = json["title"] as String;
     final selftext = json["selftext"] as String;
+    final author = json["author"] as String;
+    final linkFlairText = json["link_flair_text"] as String;
+    final ups = json["ups"] as int;
+
     String? thumbnail = json["thumbnail"] as String?;
     if (
       thumbnail != null && (
         thumbnail == "self" || !(
-          thumbnail.startsWith("http://") || 
+          thumbnail.startsWith("https://") || 
           thumbnail.startsWith("http://")
         ))
     ) {
       thumbnail = null;
     }
-    final ups = json["ups"] as int;
 
     return RedditPost(
       id: id,
       title: title, 
       selftext: selftext, 
       thumbnail: thumbnail, 
+      author: author,
+      linkFlairText: linkFlairText,
       ups: ups
     );
   }
@@ -53,6 +64,8 @@ class RedditPost {
     "title": title,
     "selftext": selftext,
     "thumbnail": thumbnail,
+    "author": author,
+    "link_flair_text": linkFlairText,
     "ups": ups,
   };
 }

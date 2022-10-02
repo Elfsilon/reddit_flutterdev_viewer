@@ -1,4 +1,4 @@
-import 'package:reddit_flutterdev_viewer/post_viewer/models/reddit_post.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post.dart';
 
 class RedditPostList {
   const RedditPostList({

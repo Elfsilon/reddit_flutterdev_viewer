@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/models/reddit_post_list.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/services/reddit_post_service.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post_list.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/services/reddit_post_service.dart';
 
 final postListControllerProvider = 
   StateNotifierProvider.autoDispose<PostListController, AsyncValue<RedditPostList>>(

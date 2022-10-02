@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/models/reddit_post.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/models/reddit_post_list.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post_list.dart';
 
 void main() {
   test("refresh RedditPostList when it's not empty", () {
@@ -9,7 +9,9 @@ void main() {
         id: "0",
         title: "title", 
         selftext: "text", 
-        thumbnail: null, 
+        thumbnail: null,
+        author: "author",
+        linkFlairText: "text",
         ups: 0,
       ),
       RedditPost(
@@ -17,6 +19,8 @@ void main() {
         title: "title", 
         selftext: "text", 
         thumbnail: null, 
+        author: "author",
+        linkFlairText: "text",
         ups: 0,
       ),
     ]);
@@ -27,6 +31,8 @@ void main() {
         title: "title updated", 
         selftext: "text updated", 
         thumbnail: "https://thumbnail/somethumbnail.png", 
+        author: "author",
+        linkFlairText: "text",
         ups: 0,
       ),
       RedditPost(
@@ -34,6 +40,8 @@ void main() {
         title: "title", 
         selftext: "text", 
         thumbnail: null, 
+        author: "author",
+        linkFlairText: "text",
         ups: 0,
       ),
       RedditPost(
@@ -41,6 +49,8 @@ void main() {
         title: "title", 
         selftext: "text", 
         thumbnail: null, 
+        author: "author",
+        linkFlairText: "text",
         ups: 0,
       ),
     ]);
@@ -66,6 +76,8 @@ void main() {
         title: "title", 
         selftext: "text", 
         thumbnail: null, 
+        author: "author",
+        linkFlairText: "text",
         ups: 0,
       ),
       RedditPost(
@@ -73,6 +85,8 @@ void main() {
         title: "title", 
         selftext: "text", 
         thumbnail: null, 
+        author: "author",
+        linkFlairText: "text",
         ups: 0,
       ),
     ]);
