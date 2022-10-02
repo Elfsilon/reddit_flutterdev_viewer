@@ -3,7 +3,7 @@ import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post
 
 void main() {
   test('RedditPost.fromAnother equality', () {
-    const post1 = RedditPost(id: "x", title: "", selftext: "", thumbnail: null, ups: 1);
+    const post1 = RedditPost(id: "x", title: "", selftext: "", thumbnail: null, author: "", linkFlairText: "", ups: 1);
     final post2 = RedditPost.fromAnother(post1);
     expect(post1 == post2, false);
     expect(post1.id == post2.id, true);

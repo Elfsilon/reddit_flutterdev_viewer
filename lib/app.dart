@@ -15,11 +15,11 @@ class App extends StatelessWidget {
         brightness: Brightness.dark,
         primarySwatch: createMaterialColor(AppColors.primary),
         scaffoldBackgroundColor: AppColors.appBg,
-        // textTheme: TextTheme(
-        //   bodyText2: TextStyle(
-        //     fontSize: 24,
-        //   ),
-        // ),
+        textTheme: const TextTheme(
+          caption: TextStyle(
+            color: AppColors.mutedText,
+          ),
+        ),
       ),
       home: const PostListScreen(),
     );
