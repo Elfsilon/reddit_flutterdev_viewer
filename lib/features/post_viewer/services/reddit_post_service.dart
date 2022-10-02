@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/data/reddit_repository.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/models/reddit_post_list.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/data/reddit_repository.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post_list.dart';
 
 final redditPostServiceProvider = Provider((ref) => RedditPostService(
   repository: ref.watch(redditRepositoryProvider),

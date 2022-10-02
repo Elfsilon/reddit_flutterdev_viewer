@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reddit_flutterdev_viewer/constants/constants.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/models/reddit_post.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post.dart';
 
 class Post extends StatelessWidget {
   const Post({

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/models/reddit_post.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post.dart';
 
 void main() {
   test('RedditPost.fromAnother equality', () {

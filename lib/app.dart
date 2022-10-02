@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reddit_flutterdev_viewer/constants/constants.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/ui/screens/post_list.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/ui/screens/post_list.dart';
 import 'package:reddit_flutterdev_viewer/shared/utils/create_material_color.dart';
 
 class App extends StatelessWidget {

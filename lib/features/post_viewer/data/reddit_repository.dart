@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:reddit_flutterdev_viewer/network/config.dart';
 import 'package:reddit_flutterdev_viewer/network/dio_client.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/models/reddit_post_list.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post_list.dart';
 
 final redditRepositoryProvider = Provider((ref) =>
   RedditRepository(client: ref.watch(dioClientProvider)));

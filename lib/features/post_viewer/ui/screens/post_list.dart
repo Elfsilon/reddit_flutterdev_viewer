@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:reddit_flutterdev_viewer/constants/constants.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/models/reddit_post.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/ui/controllers/post_list_controller.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/ui/screens/post_detail.dart';
-import 'package:reddit_flutterdev_viewer/post_viewer/ui/widgets/post.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/models/reddit_post.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/ui/controllers/post_list_controller.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/ui/screens/post_detail.dart';
+import 'package:reddit_flutterdev_viewer/features/post_viewer/ui/widgets/post.dart';
 import 'package:reddit_flutterdev_viewer/shared/widgets/app_bar.dart';
 import 'package:reddit_flutterdev_viewer/shared/widgets/choice.dart';
 import 'package:reddit_flutterdev_viewer/shared/widgets/snackbar.dart';
